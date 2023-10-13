@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public float maxSpeed = 5.0f;
     bool isOnGround = false;
     public float jumpForce = 1.0f;
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +40,12 @@ public class PlayerController : MonoBehaviour
         if ((isOnGround == true) && (Input.GetAxis("Jump") > 0.0f))
         {
             playerObject.AddForce(Vector2.up * jumpForce);
+            animator.SetBool("isJumping", true);
+        }
+
+        if(isOnGround == true)
+        {
+            animator.SetBool("isJumping", false);
         }
     }
 }
