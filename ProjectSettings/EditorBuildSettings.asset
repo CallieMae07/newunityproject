@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/menu.unity
     guid: d349da753e05c8449af518746c86a8d7
   - enabled: 1
-    path: Assets/Scenes/moving square.unity
+    path: Assets/Scenes/Game.unity
     guid: db300143a578c4c40ad63b4ecca09659
+  - enabled: 1
+    path: Assets/Scenes/Death Screen.unity
+    guid: 86d7b02947f46944a997d84744cef73d
   m_configObjects: {}
